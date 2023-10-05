@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Include Font Awesome library for icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+        </div>
+    </header>
+    <nav class="top-nav">
+        <div class="container">
+            <ul>
+                <li><a href="#home"><i class="material-icons">home</i> Home</a></li>
+                <li><a href="#about"><i class="material-icons">person</i> About Me</a></li>
+                <li><a href="#contact"><i class="material-icons">mail</i> Contact Me</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2><strong style="color: var(--fourth-color);">Welcome to My Website</strong></h2>
+                    <p style="margin-bottom: 50px;">
+                        <strong style="color: var(--secondary-color); font-size: 2.5em;">Hi, I am Luai a Full Stack <span style="color:var(--third-color);">developer.</span></strong>
+                    </p>
+                    <p>Forward-thinking graduate with a bachelor’s degree in computer science and have acquired skills in maintenance of
+                        computers from software and hardware. Through my study and work experience, I have gained knowledge in JavaScript,
+                        networks, and software. Experienced in problem-solving and seeking career opportunities at a leading employer in the field of
+                        information technology, where I will be able to hone my skills that I acquired from my study and work experience and to
+                        contribute to the company’s development and success.<a href="#seemore" class="btn btn-seemore">See More..</a></p>
+                    <a href="#hire" class="btn btn-hire">Hire Me !</a>
+                    <a href="Projects" class="btn btn-projects btn-selected">See My Projects</a>
+                </div>
+                <div class="about-image">
+                    <img src="https://gratisography.com/wp-content/uploads/2023/05/gratisography-retro-boss-cat-free-stock-photo-1170x780.jpg" alt="Retro Boss Cat">
+                </div>
+            </div>
+        </div>
+    </section>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('.top-nav a').click(function() {
+                    // Remove 'selected' class from all buttons
+                    $('.top-nav a').removeClass('selected');
+                    // Add 'selected' class to the clicked button
+                    $(this).addClass('selected');
+                });
+            });
+        </script>
+</body>
+</html>
